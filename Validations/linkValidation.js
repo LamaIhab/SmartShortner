@@ -3,7 +3,7 @@ const Joi = require("joi");
 
 const createVal = request => {
   const linkData = {
-    slug: Joi.string().required(),
+    slug: Joi.string(),
     ios: Joi.object().keys({
         primary:Joi.string().required(),
         fallback:Joi.string().required()
