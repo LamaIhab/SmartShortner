@@ -4,8 +4,11 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "@supercharge/strings": "^1.8.0",
     "express": "^4.17.1",
-    "mongoose": "^5.9.16"
+    "joi": "^14.3.1",
+    "mongoose": "^5.9.16",
+    "uuid": "^8.0.0"
   },
   "devDependencies": {},
   "scripts": {
