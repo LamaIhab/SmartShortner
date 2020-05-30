@@ -9,13 +9,13 @@ const linkSchema = new Schema({
   ios: {
     primary: {
       type: "String",
-      required: true
+      required: "true"
     },
     fallback: {
       type: "String",
       required: true
     },
-    required: true
+  
   },
   android: {
     primary: {
@@ -26,7 +26,7 @@ const linkSchema = new Schema({
       type: "String",
       required: true
     },
-    required: true
+
   },
 
   web: {
