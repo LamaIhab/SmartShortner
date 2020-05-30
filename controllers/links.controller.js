@@ -42,6 +42,22 @@ const createLink = async (req,res)=>{
     }
 }
 
+const getLinks = async(req,res)=>{
+    try{
+        const links = await Link.find()
+        if(links.length==0)
+        return res.json({msg:'no links created yet',data:[]})
+        else
+        return res.json({data:links})
+
+        
+    }
+    catch(err){
+        return res.status(500).send(errorCreator(500,'server error'))
+    }
+}
+
 module.exports={
-    createLink
+    createLink,
+    getLinks
 }
